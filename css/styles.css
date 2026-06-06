@@ -11,20 +11,20 @@
 }
 
 :root {
-  --green-dark:   #2e5e3e;
-  --green:        #3d7a52;
-  --green-light:  #e8f4ed;
-  --gold:         #c8882a;
-  --gold-light:   #f5e6c8;
-  --terra:        #b04e2c;
-  --cream:        #faf7f0;
+  --green-dark:   #2d3a7c;   /* deep indigo-blue */
+  --green:        #4a5bbf;   /* mid blue */
+  --green-light:  #eef0fb;   /* pale lavender tint */
+  --gold:         #7b4fb5;   /* purple */
+  --gold-light:   #f0eaf9;   /* soft purple tint */
+  --terra:        #5c3494;   /* deep purple (errors / accents) */
+  --cream:        #f6f7fc;   /* cool off-white */
   --white:        #ffffff;
-  --brown-dark:   #2c1810;
-  --brown-mid:    #5a3820;
-  --gray:         #6b6b6b;
-  --gray-light:   #e9e6df;
-  --shadow-sm:    0 2px 8px rgba(0,0,0,.10);
-  --shadow-md:    0 4px 20px rgba(0,0,0,.13);
+  --brown-dark:   #1a1c35;   /* near-black with blue tone */
+  --brown-mid:    #3b3f6e;   /* muted indigo for body text */
+  --gray:         #6b6d85;
+  --gray-light:   #e2e4f0;
+  --shadow-sm:    0 2px 8px rgba(30,30,80,.10);
+  --shadow-md:    0 4px 20px rgba(30,30,80,.15);
   --radius:       10px;
   --font-serif:   'Playfair Display', Georgia, serif;
   --font-sans:    'Nunito', 'Segoe UI', sans-serif;
@@ -333,7 +333,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(20,40,20,.45), rgba(20,40,20,.55)),
+    linear-gradient(rgba(20,25,70,.45), rgba(40,15,70,.50)),
     url('../images/hero.jpg') center/cover no-repeat;
   color: var(--white);
   text-align: center;
@@ -342,7 +342,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(46,94,62,.35) 0%, rgba(44,24,16,.25) 100%);
+  background: linear-gradient(160deg, rgba(45,58,124,.30) 0%, rgba(90,30,140,.20) 100%);
   pointer-events: none;
 }
 
