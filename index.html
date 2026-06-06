@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://www.instagram.com https://cdninstagram.com data:; script-src 'self'; frame-src https://www.instagram.com;" />
+  <meta name="description" content="Cookie's Cuddle Farm and Sanctuary — a loving home for rescued farm animals. Visit us, volunteer, or donate to help care for our animals." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Cookie's Cuddle Farm and Sanctuary" />
+  <meta property="og:description" content="A loving home for rescued farm animals. Visit, volunteer, or donate." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cookiescuddlefarm.com" />
+  <meta property="og:image" content="https://www.cookiescuddlefarm.com/images/og-image.jpg" />
+  <title>Cookie's Cuddle Farm and Sanctuary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- Skip navigation for screen readers -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Cookie's Cuddle Farm and Sanctuary — go to homepage">
+        <img src="images/logo.png" alt="Cookie's Cuddle Farm and Sanctuary logo" width="60" height="60" onerror="this.style.display='none'" />
+        <span class="logo-text">Cookie's Cuddle Farm <span class="logo-sub">&amp; Sanctuary</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#animals">Our Animals</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#get-involved">Get Involved</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#donate" class="nav-cta">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero" aria-label="Welcome to Cookie's Cuddle Farm">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <h1>Where Every Animal Finds Love</h1>
+        <p class="hero-tagline">Cookie's Cuddle Farm &amp; Sanctuary is a safe haven for rescued farm animals — a place of healing, compassion, and community.</p>
+        <div class="hero-actions">
+          <a href="#visit" class="btn btn-primary">Plan a Visit</a>
+          <a href="#donate" class="btn btn-secondary">Support Our Animals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MISSION BANNER ===== -->
+    <section class="mission-banner" aria-label="Our mission">
+      <div class="container mission-grid">
+        <div class="mission-item">
+          <span class="mission-icon" aria-hidden="true">🐾</span>
+          <p>Rescue &amp; Rehabilitate</p>
+        </div>
+        <div class="mission-item">
+          <span class="mission-icon" aria-hidden="true">🌿</span>
+          <p>Nurture &amp; Heal</p>
+        </div>
+        <div class="mission-item">
+          <span class="mission-icon" aria-hidden="true">🤝</span>
+          <p>Educate &amp; Connect</p>
+        </div>
+        <div class="mission-item">
+          <span class="mission-icon" aria-hidden="true">❤️</span>
+          <p>Love Every Animal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="images/about-farm.jpg"
+            alt="A peaceful view of Cookie's Cuddle Farm with animals grazing in green pastures"
+            width="560"
+            height="420"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-text">
+          <span class="section-label">Our Story</span>
+          <h2 id="about-heading">A Place Built on Love</h2>
+          <p>Cookie's Cuddle Farm and Sanctuary was founded with one simple belief: every animal deserves a life free from fear and suffering. What started as one person's passion grew into a thriving sanctuary where rescued farm animals receive the care, space, and love they need to thrive.</p>
+          <p>From goats and pigs to chickens and rabbits, our animals each have a unique story — and a permanent home with us. We are committed to education, community connection, and the highest standard of animal welfare.</p>
+          <a href="#get-involved" class="btn btn-primary">Join Our Community</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ANIMALS ===== -->
+    <section id="animals" class="section animals bg-light" aria-labelledby="animals-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Meet the Residents</span>
+          <h2 id="animals-heading">Our Animals</h2>
+          <p class="section-intro">Every resident at Cookie's Cuddle Farm has been rescued, rehabilitated, and given a forever home. Get to know a few of our beloved animals below.</p>
+        </div>
+
+        <div class="animal-grid" role="list">
+
+          <article class="animal-card" role="listitem">
+            <div class="animal-img-wrap">
+              <img
+                src="images/animal-1.jpg"
+                alt="A friendly goat looking directly at the camera, standing in a green pasture"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+            <div class="animal-card-body">
+              <h3>Goats</h3>
+              <p>Our mischievous, playful goats love attention and won't hesitate to investigate your pockets for treats. Each one has rescued from difficult circumstances and now lives their best life.</p>
+            </div>
+          </article>
+
+          <article class="animal-card" role="listitem">
+            <div class="animal-img-wrap">
+              <img
+                src="images/animal-2.jpg"
+                alt="A small pig resting comfortably in the sunshine on soft straw bedding"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+            <div class="animal-card-body">
+              <h3>Pigs</h3>
+              <p>Incredibly intelligent and full of personality, our pigs love belly rubs and rooting around in fresh soil. They remind us every day just how sensitive and social farm animals truly are.</p>
+            </div>
+          </article>
+
+          <article class="animal-card" role="listitem">
+            <div class="animal-img-wrap">
+              <img
+                src="images/animal-3.jpg"
+                alt="A fluffy chicken perched on a wooden fence rail, feathers ruffling in the breeze"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+            <div class="animal-card-body">
+              <h3>Chickens &amp; Birds</h3>
+              <p>Our feathered residents range from bold to shy, but all enjoy free-range days in the sunshine. Many were rescued from factory farming situations and have blossomed into their true selves.</p>
+            </div>
+          </article>
+
+          <article class="animal-card" role="listitem">
+            <div class="animal-img-wrap">
+              <img
+                src="images/animal-4.jpg"
+                alt="A rabbit sitting in soft green grass, ears perked and alert"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+            <div class="animal-card-body">
+              <h3>Rabbits &amp; Small Animals</h3>
+              <p>Gentle and curious, our small animal residents love quiet moments and gentle hands. Each one has a unique personality that visitors can't help but fall in love with.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Instagram feed teaser -->
+        <div class="instagram-teaser" aria-label="Follow us on Instagram">
+          <p>See more of our animals every day on Instagram!</p>
+          <a
+            href="https://www.instagram.com/cookiescuddlefarm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+            aria-label="Follow @cookiescuddlefarm on Instagram (opens in new tab)"
+          >
+            Follow @cookiescuddlefarm
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VISIT ===== -->
+    <section id="visit" class="section visit" aria-labelledby="visit-heading">
+      <div class="container visit-grid">
+        <div class="visit-text">
+          <span class="section-label">Come Say Hello</span>
+          <h2 id="visit-heading">Plan Your Visit</h2>
+          <p>We love welcoming guests to the farm! Whether you're coming with family, a school group, or on your own, a visit to Cookie's Cuddle Farm is an experience you won't forget.</p>
+
+          <ul class="visit-details" aria-label="Visit information">
+            <li>
+              <strong>Hours:</strong>
+              <span>By appointment — contact us to schedule your visit</span>
+            </li>
+            <li>
+              <strong>Location:</strong>
+              <span>Cookie's Cuddle Farm &amp; Sanctuary — address provided upon booking</span>
+            </li>
+            <li>
+              <strong>Group Tours:</strong>
+              <span>School groups, birthday parties, and community organizations welcome</span>
+            </li>
+            <li>
+              <strong>Accessibility:</strong>
+              <span>We strive to make the farm accessible for everyone — please contact us with any needs</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Book a Visit</a>
+        </div>
+        <div class="visit-image">
+          <img
+            src="images/visit-farm.jpg"
+            alt="Visitors smiling and petting animals at Cookie's Cuddle Farm on a sunny day"
+            width="560"
+            height="420"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-band" aria-label="Our impact">
+      <div class="container stats-grid">
+        <div class="stat">
+          <span class="stat-number" aria-label="Animals in our care">50+</span>
+          <span class="stat-label">Animals in Our Care</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" aria-label="Species rescued">10+</span>
+          <span class="stat-label">Species Rescued</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" aria-label="Visitors welcomed">500+</span>
+          <span class="stat-label">Visitors Welcomed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" aria-label="Years of love">5+</span>
+          <span class="stat-label">Years of Love</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GET INVOLVED ===== -->
+    <section id="get-involved" class="section get-involved bg-light" aria-labelledby="involved-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Make a Difference</span>
+          <h2 id="involved-heading">Get Involved</h2>
+          <p class="section-intro">There are many ways to support Cookie's Cuddle Farm. Every act of kindness — big or small — makes a real difference in the lives of our animals.</p>
+        </div>
+
+        <div class="involved-grid">
+
+          <div class="involved-card" id="volunteer">
+            <div class="involved-icon" aria-hidden="true">🌱</div>
+            <h3>Volunteer</h3>
+            <p>Join our dedicated team of volunteers who help with daily animal care, farm maintenance, events, and more. No experience necessary — just a big heart and a willingness to get your hands dirty!</p>
+            <a href="#contact" class="btn btn-outline">Become a Volunteer</a>
+          </div>
+
+          <div class="involved-card" id="donate">
+            <div class="involved-icon" aria-hidden="true">💛</div>
+            <h3>Donate</h3>
+            <p>Your donation goes directly to feeding, housing, and providing veterinary care for our animals. Every dollar makes a real difference. We are grateful for any amount you can give.</p>
+            <a href="mailto:Info@cookiescuddlefarm.com?subject=Donation%20Inquiry" class="btn btn-primary" aria-label="Contact us about donating (opens email)">Donate Now</a>
+          </div>
+
+          <div class="involved-card">
+            <div class="involved-icon" aria-hidden="true">📣</div>
+            <h3>Spread the Word</h3>
+            <p>Follow us on social media, share our posts, and tell your friends and family about Cookie's Cuddle Farm. Awareness is one of the most powerful tools we have.</p>
+            <a
+              href="https://www.instagram.com/cookiescuddlefarm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+              aria-label="Follow us on Instagram (opens in new tab)"
+            >Follow Us</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Say Hello</span>
+          <h2 id="contact-heading">Contact Us</h2>
+          <p>We'd love to hear from you! Whether you're interested in visiting, volunteering, donating, or just want to share some love for our animals, reach out any time.</p>
+
+          <ul class="contact-details" aria-label="Contact details">
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:Info@cookiescuddlefarm.com">Info@cookiescuddlefarm.com</a>
+            </li>
+            <li>
+              <strong>Instagram:</strong>
+              <a href="https://www.instagram.com/cookiescuddlefarm" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram (opens in new tab)">@cookiescuddlefarm</a>
+            </li>
+            <li>
+              <strong>Website:</strong>
+              <a href="https://www.cookiescuddlefarm.com">cookiescuddlefarm.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form
+            class="contact-form"
+            id="contactForm"
+            novalidate
+            aria-label="Contact form"
+          >
+            <div class="form-group">
+              <label for="name">Your Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="name-error"
+                placeholder="Jane Smith"
+              />
+              <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+                placeholder="jane@example.com"
+              />
+              <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" autocomplete="off">
+                <option value="">Select a topic…</option>
+                <option value="visit">Plan a Visit</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="donate">Donation</option>
+                <option value="media">Media / Press</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+                placeholder="Tell us how we can help…"
+              ></textarea>
+              <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Honeypot anti-spam field — hidden from real users -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Leave this blank</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              Thank you! Your message has been sent. We'll be in touch soon.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Cookie's Cuddle Farm <span>&amp; Sanctuary</span></p>
+        <p class="footer-tagline">Where every animal finds love.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#animals">Our Animals</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#get-involved">Get Involved</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <p>Follow Along</p>
+        <a
+          href="https://www.instagram.com/cookiescuddlefarm"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow Cookie's Cuddle Farm on Instagram (opens in new tab)"
+          class="social-link"
+        >
+          <!-- Instagram SVG icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Cookie's Cuddle Farm and Sanctuary. All rights reserved.</p>
+        <p>
+          <a href="mailto:Info@cookiescuddlefarm.com">Info@cookiescuddlefarm.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
