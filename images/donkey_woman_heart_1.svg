@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 600" role="img" aria-label="A gray donkey with a long snout on the left faces right toward a woman of color on the right who faces left. Their faces are close and touching at center in a tender, caring pose. Red ribbon arcs rise from a heart point below and curve up behind each head. Background is transparent.">
+  <title>Donkey and Woman of Color in Caring Pose Within Open-Top Heart</title>
+  <desc>A gray donkey with a long distinctive snout faces right, and a woman of color with warm brown skin, a visible nose profile, and long dark hair faces left. They lean toward each other tenderly, faces touching at center. Two red ribbon arcs sweep up from a bottom heart point and curl behind each head, forming an open-top heart shape. The background is fully transparent.</desc>
+
+  <!-- ====================================================
+       DRAW ORDER:
+       1. Red ribbon arcs (behind everything)
+       2. Donkey neck
+       3. Woman neck + hair back
+       4. Donkey head / snout
+       5. Woman head / hair front
+       6. Details: eyes, nose, lips, markings
+  ==================================================== -->
+
+  <!-- RED RIBBON LEFT ARC — from bottom point sweeping up-left behind donkey -->
+  <path d="M310 545 C275 510 175 455 118 375 C72 308 72 228 108 182 C132 153 168 148 202 168"
+        fill="none" stroke="#990000" stroke-width="38" stroke-linecap="round"/>
+  <path d="M310 545 C275 510 175 455 118 375 C72 308 72 228 108 182 C132 153 168 148 202 168"
+        fill="none" stroke="#cc1111" stroke-width="22" stroke-linecap="round" opacity="0.55"/>
+  <path d="M310 545 C275 510 175 455 118 375 C72 308 72 228 108 182 C132 153 168 148 202 168"
+        fill="none" stroke="#ff4444" stroke-width="8" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- RED RIBBON RIGHT ARC — from bottom point sweeping up-right behind woman -->
+  <path d="M310 545 C345 510 445 455 502 375 C548 308 548 228 512 182 C488 153 452 148 418 168"
+        fill="none" stroke="#990000" stroke-width="38" stroke-linecap="round"/>
+  <path d="M310 545 C345 510 445 455 502 375 C548 308 548 228 512 182 C488 153 452 148 418 168"
+        fill="none" stroke="#cc1111" stroke-width="22" stroke-linecap="round" opacity="0.55"/>
+  <path d="M310 545 C345 510 445 455 502 375 C548 308 548 228 512 182 C488 153 452 148 418 168"
+        fill="none" stroke="#ff4444" stroke-width="8" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- ===== DONKEY NECK ===== -->
+  <path d="M72 370 C62 408 70 455 96 475 C116 492 158 494 180 480 C198 468 202 435 197 398 L188 368
+           C174 385 152 393 133 389 C112 384 88 376 72 370Z"
+        fill="#c4c4c4" stroke="#222" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Neck shading -->
+  <path d="M82 388 C74 418 80 450 100 466 C116 479 148 481 166 470 C180 461 184 436 180 406 L173 382
+           C162 396 144 403 128 399 C110 395 90 390 82 388Z"
+        fill="#b0b0b0" opacity="0.4"/>
+
+  <!-- ===== WOMAN NECK ===== -->
+  <path d="M350 290 C342 315 344 348 354 372 C364 394 384 405 402 403 C420 401 433 388 436 368
+           C440 342 432 308 424 286 C415 302 402 312 388 312 C373 312 357 302 350 290Z"
+        fill="#9B5523" stroke="#6b3410" stroke-width="1.5"/>
+
+  <!-- ===== WOMAN HAIR BACK (behind face) ===== -->
+  <ellipse cx="448" cy="195" rx="75" ry="82" fill="#1a0d02"/>
+  <!-- Hair mass flowing down right -->
+  <path d="M462 205 C495 240 508 290 500 348 C496 374 484 398 470 410 C458 420 445 422 438 414
+           C448 390 460 356 462 320 C464 286 458 246 447 216Z" fill="#1a0d02"/>
+  <path d="M480 218 C510 256 516 304 504 362 C498 390 485 414 472 425
+           C482 406 490 372 488 336 C486 302 476 260 462 232Z" fill="#0e0701"/>
+
+  <!-- ===== DONKEY HEAD — elongated profile facing right ===== -->
+  <g id="donkey-head">
+    <!-- Skull / cranium — upper rounded part -->
+    <ellipse cx="182" cy="188" rx="68" ry="72" fill="#c8c8c8" stroke="#222" stroke-width="3"/>
+
+    <!-- Long snout / muzzle extending RIGHT — key shape -->
+    <!-- Snout bridge top line -->
+    <path d="M218 210 C240 205 268 208 292 218 C312 226 325 240 322 255
+             C320 268 308 278 290 282 C268 287 242 282 222 272 C208 265 200 255 202 242
+             C204 230 210 215 218 210Z"
+          fill="#d8d8d8" stroke="#222" stroke-width="2.8"/>
+
+    <!-- Muzzle tip bulge -->
+    <ellipse cx="308" cy="258" rx="22" ry="18" fill="#e2e2e2" stroke="#222" stroke-width="2"/>
+    <ellipse cx="308" cy="258" rx="16" ry="13" fill="#d8d8d8"/>
+
+    <!-- Nostrils -->
+    <ellipse cx="302" cy="252" rx="6" ry="4" fill="#666" transform="rotate(-15,302,252)"/>
+    <ellipse cx="314" cy="265" rx="6" ry="4" fill="#666" transform="rotate(10,314,265)"/>
+
+    <!-- Upper lip line -->
+    <path d="M290 278 C298 282 310 282 318 277" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Chin / lower jaw -->
+    <path d="M202 242 C198 255 200 270 208 280 C216 290 230 294 245 292 C255 290 265 285 272 278"
+          stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Ears — tall and expressive -->
+    <!-- Left ear (back) -->
+    <path d="M128 128 C122 90 130 58 142 50 C154 42 166 52 164 76 C162 100 150 120 140 132Z"
+          fill="#b0b0b0" stroke="#222" stroke-width="2.5"/>
+    <path d="M132 126 C127 96 133 68 142 60 C150 52 159 60 158 80 C156 100 148 118 138 128Z"
+          fill="#888"/>
+
+    <!-- Right ear (front, slightly forward) -->
+    <path d="M168 118 C164 78 174 48 186 42 C198 36 210 48 207 72 C204 96 192 116 180 124Z"
+          fill="#bcbcbc" stroke="#222" stroke-width="2.5"/>
+    <path d="M172 116 C168 82 176 56 185 50 C194 44 203 54 200 76 C197 98 186 114 176 120Z"
+          fill="#999"/>
+
+    <!-- Mane / forelock tuft between ears -->
+    <path d="M148 132 C144 108 152 90 162 84 C172 78 182 88 180 106 C178 122 168 130 158 136Z"
+          fill="#3a3a3a" stroke="#1a1a1a" stroke-width="1.5"/>
+    <path d="M156 134 C153 112 160 96 168 92 C176 88 182 98 180 114 C178 128 170 134 162 138Z"
+          fill="#2a2a2a"/>
+    <!-- Extra mane wisps -->
+    <path d="M138 138 C134 118 140 102 148 98 C156 94 162 102 160 118Z" fill="#3a3a3a" opacity="0.7"/>
+
+    <!-- Eye — closed, gentle downward curve suggesting peace -->
+    <path d="M148 194 Q165 184 184 192" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Upper eyelid thickness -->
+    <path d="M148 194 Q165 186 184 192" stroke="#444" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- Lashes -->
+    <line x1="152" y1="191" x2="149" y2="184" stroke="#222" stroke-width="2"/>
+    <line x1="160" y1="187" x2="159" y2="180" stroke="#222" stroke-width="2"/>
+    <line x1="169" y1="185" x2="169" y2="178" stroke="#222" stroke-width="2"/>
+    <line x1="178" y1="187" x2="180" y2="181" stroke="#222" stroke-width="2"/>
+
+    <!-- Forehead shading -->
+    <path d="M122 165 C128 144 146 130 164 128 C174 126 177 137 171 144
+             C164 152 148 156 140 168Z" fill="#555" opacity="0.6"/>
+
+    <!-- Cheek warmth -->
+    <ellipse cx="160" cy="235" rx="28" ry="21" fill="#aaa" opacity="0.35"/>
+
+    <!-- Head outline reinforcement -->
+    <ellipse cx="182" cy="188" rx="68" ry="72" fill="none" stroke="#1a1a1a" stroke-width="3.5"/>
+  </g>
+
+  <!-- ===== WOMAN HEAD — clear profile facing left ===== -->
+  <g id="woman-head">
+
+    <!-- Face shape — clear left-facing profile, NOT a circle -->
+    <!-- Cranium back (rightward) -->
+    <path d="M418 130 C448 128 472 145 480 172 C488 200 478 232 462 252
+             C448 270 430 278 415 275 C400 272 388 262 382 248
+             C372 228 372 200 380 175 C388 150 403 132 418 130Z"
+          fill="#9B5523"/>
+
+    <!-- Face front — profile with forehead, nose, lips, chin -->
+    <path d="M418 130
+             C404 128 390 138 378 155
+             C365 173 358 196 358 218
+             C358 238 364 256 374 270
+             C382 282 394 290 406 292
+             C418 294 430 288 438 278
+             L462 252
+             C478 232 488 200 480 172
+             C472 145 448 128 418 130Z"
+          fill="#9B5523"/>
+
+    <!-- Skin overlay for warmth and variation -->
+    <path d="M415 135 C400 134 386 144 374 162 C361 181 355 205 356 228
+             C357 250 364 270 376 282 C386 293 400 299 413 297
+             C425 295 436 288 442 276 L460 250
+             C474 232 482 202 476 175 C470 150 447 137 415 135Z"
+          fill="#a05a28"/>
+
+    <!-- Forehead highlight -->
+    <ellipse cx="410" cy="165" rx="25" ry="18" fill="#b06030" opacity="0.3"/>
+
+    <!-- === NOSE — clearly visible left-facing profile === -->
+    <!-- Nose bridge from brow down -->
+    <path d="M373 188 C368 198 366 212 368 226 C370 238 376 248 384 254"
+          stroke="#6b3010" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- Nose tip bulge pointing left -->
+    <path d="M368 228 C362 232 358 240 360 248 C362 256 370 260 378 258 C384 256 388 250 386 244"
+          fill="#8a4018" stroke="#6b3010" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Nostril -->
+    <path d="M362 246 C360 250 362 255 366 256 C370 257 374 254 374 250"
+          fill="#5a2a10" stroke="none"/>
+
+    <!-- === LIPS === -->
+    <!-- Upper lip -->
+    <path d="M360 278 C364 270 370 267 376 268 C382 269 386 274 384 280"
+          fill="#7a3020" stroke="#5a2010" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Lower lip -->
+    <path d="M360 278 C360 285 364 292 370 294 C376 296 382 293 384 287 C385 282 384 280 384 280"
+          fill="#8a3828" stroke="#5a2010" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Lip line -->
+    <path d="M360 278 C368 276 378 276 384 280" stroke="#5a2010" stroke-width="1.5" fill="none"/>
+
+    <!-- Chin -->
+    <path d="M362 294 C364 305 370 312 378 314 C386 316 395 312 400 304"
+          stroke="#7a3820" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- === EYE — closed, graceful === -->
+    <!-- Eyelid -->
+    <path d="M376 200 Q392 192 410 198" stroke="#1a0d02" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Under-eye soft shadow -->
+    <path d="M378 202 Q393 196 409 201" stroke="#6b3010" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+    <!-- Lashes upper -->
+    <line x1="379" y1="199" x2="376" y2="192" stroke="#1a0d02" stroke-width="2.2"/>
+    <line x1="387" y1="195" x2="386" y2="188" stroke="#1a0d02" stroke-width="2.2"/>
+    <line x1="396" y1="193" x2="396" y2="186" stroke="#1a0d02" stroke-width="2.2"/>
+    <line x1="405" y1="196" x2="407" y2="190" stroke="#1a0d02" stroke-width="2.2"/>
+
+    <!-- Eyebrow — arched, expressive -->
+    <path d="M374 186 C382 178 394 174 412 179" stroke="#1a0d02" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Cheekbone warmth -->
+    <ellipse cx="382" cy="242" rx="22" ry="15" fill="#b06030" opacity="0.35"/>
+
+    <!-- Ear -->
+    <ellipse cx="458" cy="220" rx="12" ry="18" fill="#8B4513"/>
+    <ellipse cx="460" cy="220" rx="7" ry="11" fill="#7a3820" opacity="0.5"/>
+
+    <!-- === HAIR front strands and framing === -->
+    <!-- Front hairline strands over forehead -->
+    <path d="M374 142 C370 122 378 108 390 104 C402 100 414 110 415 124
+             C407 118 396 116 386 122 C376 128 372 140 372 154Z"
+          fill="#1a0d02"/>
+    <!-- Side strand -->
+    <path d="M362 168 C356 148 360 130 368 122 C364 136 362 152 364 168Z"
+          fill="#1a0d02"/>
+
+    <!-- Hair outline subtle -->
+    <ellipse cx="448" cy="195" rx="75" ry="82" fill="none" stroke="#0e0701" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Warm glow at the touching point between snout and woman's nose -->
+  <ellipse cx="345" cy="262" rx="18" ry="14" fill="#d4a080" opacity="0.18"/>
+
+</svg>

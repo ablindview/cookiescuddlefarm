@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="A gray donkey on the left and a woman of color on the right face each other with their faces touching at center. Two red ribbon arcs curve up behind each head and sweep down to meet at a heart point below them, forming an open-top heart. Background is transparent.">
+  <title>Donkey and Woman of Color in Open-Top Heart</title>
+  <desc>A gray donkey faces right and a woman of color with warm brown skin and long dark hair faces left. Their faces touch gently at the center. Red ribbon arcs rise behind each of their heads from the bottom heart point, curling outward and ending behind each head — forming the two lobes of a heart whose top is open, filled by the two heads. The background is fully transparent.</desc>
+
+  <!-- ===== DRAW ORDER =====
+       1. Red ribbon arcs (behind figures)
+       2. Donkey neck + head
+       3. Woman hair + head
+       4. Face details on top
+  ===== -->
+
+  <!-- RED RIBBON - LEFT ARC (rises from bottom point, sweeps left and up behind donkey head) -->
+  <!-- Outer dark red stroke -->
+  <path d="M300 530 C260 490 140 430 95 340 C60 270 70 190 110 155 C140 130 178 135 210 160"
+        fill="none" stroke="#AA0000" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Inner bright red highlight -->
+  <path d="M300 530 C260 490 140 430 95 340 C60 270 70 190 110 155 C140 130 178 135 210 160"
+        fill="none" stroke="#EE2222" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+
+  <!-- RED RIBBON - RIGHT ARC (rises from bottom point, sweeps right and up behind woman head) -->
+  <!-- Outer dark red stroke -->
+  <path d="M300 530 C340 490 460 430 505 340 C540 270 530 190 490 155 C460 130 422 135 390 160"
+        fill="none" stroke="#AA0000" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Inner bright red highlight -->
+  <path d="M300 530 C340 490 460 430 505 340 C540 270 530 190 490 155 C460 130 422 135 390 160"
+        fill="none" stroke="#EE2222" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+
+  <!-- ===== DONKEY (left, facing RIGHT) ===== -->
+  <g id="donkey">
+    <!-- Neck -->
+    <path d="M88 330 C75 368 80 415 104 438 C122 456 160 460 184 447 C202 436 207 402 202 366 L194 338 C181 352 160 359 143 355 C125 350 105 342 88 330Z"
+          fill="#c8c8c8" stroke="#2a2a2a" stroke-width="2.5"/>
+
+    <!-- Left ear -->
+    <ellipse cx="152" cy="112" rx="12" ry="30" fill="#b2b2b2" stroke="#2a2a2a" stroke-width="2" transform="rotate(-22,152,112)"/>
+    <ellipse cx="152" cy="112" rx="6" ry="19" fill="#888" transform="rotate(-22,152,112)"/>
+
+    <!-- Right ear -->
+    <ellipse cx="190" cy="103" rx="11" ry="27" fill="#bcbcbc" stroke="#2a2a2a" stroke-width="2" transform="rotate(-4,190,103)"/>
+    <ellipse cx="190" cy="103" rx="5.5" ry="17" fill="#999" transform="rotate(-4,190,103)"/>
+
+    <!-- Mane -->
+    <path d="M152 128 C156 104 167 90 180 86 C193 82 200 93 196 108 C192 122 179 127 170 131Z" fill="#444" stroke="#222" stroke-width="1.5"/>
+    <path d="M164 132 C170 108 178 99 187 97 C196 95 199 108 194 120Z" fill="#333"/>
+
+    <!-- Head -->
+    <ellipse cx="198" cy="210" rx="72" ry="82" fill="#c8c8c8" stroke="#2a2a2a" stroke-width="3.5"/>
+
+    <!-- Face markings -->
+    <path d="M138 168 C144 147 161 134 178 132 C188 130 190 140 184 147 C177 155 161 159 153 172Z" fill="#555" opacity="0.75"/>
+
+    <!-- Cheek shading -->
+    <ellipse cx="167" cy="235" rx="27" ry="21" fill="#aaa" opacity="0.38"/>
+
+    <!-- Muzzle (pointing right) -->
+    <ellipse cx="258" cy="262" rx="40" ry="30" fill="#ddd" stroke="#2a2a2a" stroke-width="2.5"/>
+    <ellipse cx="258" cy="262" rx="32" ry="24" fill="#d2d2d2"/>
+
+    <!-- Nostrils -->
+    <ellipse cx="262" cy="255" rx="7" ry="4.5" fill="#777" transform="rotate(-10,262,255)"/>
+    <ellipse cx="274" cy="270" rx="7" ry="4.5" fill="#777" transform="rotate(10,274,270)"/>
+
+    <!-- Eye closed -->
+    <path d="M158 196 Q174 188 192 196" stroke="#2a2a2a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <line x1="161" y1="193" x2="159" y2="187" stroke="#2a2a2a" stroke-width="2"/>
+    <line x1="169" y1="190" x2="169" y2="184" stroke="#2a2a2a" stroke-width="2"/>
+    <line x1="178" y1="189" x2="179" y2="183" stroke="#2a2a2a" stroke-width="2"/>
+    <line x1="187" y1="192" x2="189" y2="187" stroke="#2a2a2a" stroke-width="2"/>
+  </g>
+
+  <!-- ===== WOMAN (right, facing LEFT) ===== -->
+  <g id="woman">
+    <!-- Hair back volume -->
+    <ellipse cx="418" cy="190" rx="70" ry="78" fill="#1e1005"/>
+
+    <!-- Hair flowing down -->
+    <path d="M435 196 C466 228 476 274 469 326 C465 350 454 372 441 384 C431 393 419 395 413 388 C421 367 431 336 433 303 C435 272 431 235 422 208Z"
+          fill="#1e1005"/>
+    <path d="M453 208 C480 244 484 290 474 344 C469 370 457 392 445 402 C454 385 462 354 461 320 C460 288 451 250 439 222Z"
+          fill="#130b02"/>
+
+    <!-- Neck -->
+    <path d="M338 275 C331 296 333 328 342 351 C351 372 370 382 389 380 C406 378 419 366 421 347 C425 322 418 292 410 272 C402 287 389 296 375 296 C360 296 344 286 338 275Z"
+          fill="#9B5523" stroke="#6b3410" stroke-width="1.5"/>
+
+    <!-- Face -->
+    <ellipse cx="382" cy="215" rx="60" ry="70" fill="#8B4513"/>
+    <ellipse cx="379" cy="219" rx="56" ry="65" fill="#9B5523"/>
+
+    <!-- Cheekbone -->
+    <ellipse cx="366" cy="230" rx="21" ry="14" fill="#aa6030" opacity="0.45"/>
+
+    <!-- Ear -->
+    <ellipse cx="436" cy="220" rx="11" ry="16" fill="#8B4513"/>
+
+    <!-- Nose pointing left -->
+    <path d="M326 238 C321 251 322 266 330 276 C335 283 344 285 346 279"
+          stroke="#6b3410" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Lips -->
+    <path d="M323 285 C329 279 338 278 343 281 C348 285 350 292 345 296 C340 300 329 299 324 294 C321 291 321 287 323 285Z"
+          fill="#7a3520"/>
+    <path d="M323 285 C329 289 338 290 343 281" stroke="#5a2515" stroke-width="1.8" fill="none"/>
+
+    <!-- Eye closed -->
+    <path d="M354 203 Q370 196 388 202" stroke="#1e1005" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <line x1="357" y1="201" x2="355" y2="195" stroke="#1e1005" stroke-width="2"/>
+    <line x1="365" y1="198" x2="364" y2="192" stroke="#1e1005" stroke-width="2"/>
+    <line x1="374" y1="197" x2="374" y2="191" stroke="#1e1005" stroke-width="2"/>
+    <line x1="382" y1="199" x2="384" y2="194" stroke="#1e1005" stroke-width="2"/>
+
+    <!-- Eyebrow -->
+    <path d="M352 189 Q368 181 388 187" stroke="#1e1005" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Front hair -->
+    <path d="M350 160 C354 140 366 128 380 126 C393 124 402 133 403 146 C396 140 386 138 377 143 C368 149 359 161 355 173Z"
+          fill="#1e1005"/>
+
+    <!-- Face outline -->
+    <ellipse cx="379" cy="219" rx="56" ry="65" fill="none" stroke="#6b3410" stroke-width="2"/>
+  </g>
+
+  <!-- Soft blend at nose-touch point -->
+  <ellipse cx="305" cy="262" rx="20" ry="16" fill="#c8a090" opacity="0.15"/>
+
+</svg>

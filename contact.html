@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';" />
+  <meta name="description" content="Contact Cookie's Cuddle Farm and Sanctuary — reach out to book a visit, ask about volunteering, or just say hello." />
+  <meta name="robots" content="index, follow" />
+  <title>Contact Us | Cookie's Cuddle Farm and Sanctuary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Cookie's Cuddle Farm and Sanctuary — home">
+        <img src="images/logo.png" alt="Cookie's Cuddle Farm and Sanctuary logo" width="60" height="60" />
+        <span class="logo-text">Cookie's Cuddle Farm <span class="logo-sub">&amp; Sanctuary</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="animals.html">Our Animals</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="donate.html" class="nav-cta">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="Contact Us">
+      <div class="container">
+        <span class="section-label">Say Hello</span>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you're interested in visiting, volunteering, donating, or just want to share some love for our animals — reach out any time.</p>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Get in Touch</span>
+          <h2 id="contact-heading">We'd Love to Hear From You</h2>
+          <p>No question is too small. Whether you want to schedule a visit, ask about volunteering, or learn more about how you can help, we're happy to chat.</p>
+
+          <ul class="contact-details" aria-label="Contact details">
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:Info@cookiescuddlefarm.com">Info@cookiescuddlefarm.com</a>
+            </li>
+            <li>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/cookiescuddlefarm" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram (opens in new tab)">@cookiescuddlefarm</a>
+            </li>
+            <li>
+              <strong>Website</strong>
+              <a href="https://www.cookiescuddlefarm.com">cookiescuddlefarm.com</a>
+            </li>
+          </ul>
+
+          <div style="margin-top:2rem;">
+            <p style="font-weight:700; color:var(--text-dark); margin-bottom:.5rem;">Response Time</p>
+            <p style="color:var(--text-mid); font-size:.95rem;">We do our best to respond to all messages within 48 hours. Thank you for your patience!</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="name">Your Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error" placeholder="Jane Smith" />
+              <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-error" placeholder="jane@example.com" />
+              <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" autocomplete="off">
+                <option value="">Select a topic…</option>
+                <option value="visit">Plan a Visit</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="donate">Donation</option>
+                <option value="media">Media / Press</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <textarea id="message" name="message" rows="5" required aria-required="true" aria-describedby="message-error" placeholder="Tell us how we can help…"></textarea>
+              <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <!-- Honeypot anti-spam -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Leave this blank</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              Thank you! Your message has been sent. We'll be in touch soon.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Cookie's Cuddle Farm <span>&amp; Sanctuary</span></p>
+        <p class="footer-tagline">Where every animal finds love.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="animals.html">Our Animals</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <p>Follow Along</p>
+        <a href="https://www.instagram.com/cookiescuddlefarm" target="_blank" rel="noopener noreferrer" aria-label="Follow Cookie's Cuddle Farm on Instagram (opens in new tab)" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Cookie's Cuddle Farm and Sanctuary. All rights reserved.</p>
+        <p><a href="mailto:Info@cookiescuddlefarm.com">Info@cookiescuddlefarm.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
