@@ -1,6 +1,6 @@
-# Cookie's Cuddle Farm & Sanctuary
+# Cookie's Cuddle Farm & Rescue
 
-Starter website for **Cookie's Cuddle Farm and Sanctuary** — a safe haven for rescued farm animals.
+Starter website for **Cookie's Cuddle Farm and Rescue** — a safe haven for rescued farm animals.
 
 🌐 [cookiescuddlefarm.com](https://www.cookiescuddlefarm.com)
 📧 [Info@cookiescuddlefarm.com](mailto:Info@cookiescuddlefarm.com)
