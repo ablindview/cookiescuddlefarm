@@ -287,10 +287,10 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 }
 
 .logo img {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 58px;
+  height: 56px;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .logo-text {
