@@ -409,6 +409,14 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   padding-block: 4rem;
 }
 
+.hero-logo {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,.35));
+}
+
 .hero h1 {
   color: var(--white);
   text-shadow: 0 2px 8px rgba(0,0,0,.4);
@@ -1070,6 +1078,8 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   .section { padding: 3.5rem 0; }
 
   .hero { min-height: 80vh; }
+
+  .hero-logo { width: 160px; height: 160px; }
 
   .mission-grid {
     grid-template-columns: repeat(2, 1fr);
