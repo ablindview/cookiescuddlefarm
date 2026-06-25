@@ -493,7 +493,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 }
 
 .story-photo-stack img {
-  width: 100%;
+  width: 50%;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   object-fit: cover;
