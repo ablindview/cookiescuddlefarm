@@ -485,6 +485,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 
 .about-text .section-label { margin-bottom: .4rem; font-size: 1.6rem; text-transform: none; letter-spacing: 0; }
 .about-text p { color: var(--text-mid); margin-bottom: 1rem; font-size: 1.15rem; }
+.about-text { margin-left: -.5in; }
 
 .story-photo-stack {
   display: flex;
