@@ -485,6 +485,20 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 
 .about-text .section-label { margin-bottom: .4rem; }
 .about-text p { color: var(--text-mid); margin-bottom: 1rem; }
+
+.story-photo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.story-photo-stack img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
 .about-text .btn { margin-top: .5rem; }
 
 /* =============================================
