@@ -88,19 +88,26 @@ if (form) {
     });
 
     if (!valid) {
-      // Focus first invalid field
       const firstInvalid = form.querySelector('[aria-invalid="true"]');
       if (firstInvalid) firstInvalid.focus();
       return;
     }
 
-    // In production wire this to a backend / form service (e.g. Formspree, Netlify Forms).
-    // For now we show a success message and reset.
-    if (successMsg) {
-      successMsg.hidden = false;
-      successMsg.focus();
-    }
-    form.reset();
+    // Submit to Formspree via fetch
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(res => {
+      if (res.ok) {
+        if (successMsg) { successMsg.hidden = false; successMsg.focus(); }
+        form.reset();
+      } else {
+        alert('There was a problem sending your message. Please email us directly at Info@cookiescuddlefarm.com');
+      }
+    }).catch(() => {
+      alert('There was a problem sending your message. Please email us directly at Info@cookiescuddlefarm.com');
+    });
   });
 
   // Clear error on input
