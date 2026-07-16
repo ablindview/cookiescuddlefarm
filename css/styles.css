@@ -893,6 +893,20 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   font-size: 1.05rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .page-hero {
+    background: #1a1f4a;
+  }
+  .page-hero .container {
+    background: rgba(0,0,0,.45);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 /* =============================================
    TEASER GRID (home page)
    ============================================= */
