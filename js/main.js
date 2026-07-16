@@ -100,8 +100,8 @@ if (form) {
       headers: { 'Accept': 'application/json' }
     }).then(res => {
       if (res.ok) {
-        if (successMsg) { successMsg.hidden = false; successMsg.focus(); }
         form.reset();
+        alert('Your message has been sent! We will get back to you within 48 hours.\n\nThank you for reaching out to Cookie\'s Cuddle Farm.');
       } else {
         alert('There was a problem sending your message. Please email us directly at Info@cookiescuddlefarm.com');
       }
