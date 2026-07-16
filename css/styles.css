@@ -1029,6 +1029,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   .about-text { margin-left: 0; }
   .about-image { order: 2; }
   .about-text  { order: 1; }
+  .story-photo-stack img { width: 85%; }
 
   .teaser-grid {
     grid-template-columns: repeat(2, 1fr);
