@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="X-Frame-Options" content="DENY" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self';" />
   <meta name="description" content="Contact Cookie's Cuddle Farm — reach out to book a visit, ask about volunteering, or just say hello." />
   <meta name="robots" content="index, follow" />
   <title>Contact Us | Cookie's Cuddle Farm</title>
@@ -46,8 +46,7 @@
 
     <section class="page-hero" aria-label="Contact Us">
       <div class="container">
-        <span class="section-label">Say Hello</span>
-        <h1>Contact Us</h1>
+        <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);">Say Hello</h1>
         <p>We'd love to hear from you! Whether you're interested in visiting, volunteering, donating, or just want to share some love for our animals — reach out any time.</p>
       </div>
     </section>
@@ -56,7 +55,6 @@
     <section class="section" aria-labelledby="contact-heading">
       <div class="container contact-grid">
         <div class="contact-info">
-          <span class="section-label">Get in Touch</span>
           <h2 id="contact-heading">We'd Love to Hear From You</h2>
           <p>No question is too small. Whether you want to schedule a visit, ask about volunteering, or learn more about how you can help, we're happy to chat.</p>
 
@@ -69,20 +67,7 @@
               <strong>Email</strong>
               <a href="mailto:Info@cookiescuddlefarm.com">Info@cookiescuddlefarm.com</a>
             </li>
-            <li>
-              <strong>Instagram</strong>
-              <a href="https://www.instagram.com/cookiescuddlefarm" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram (opens in new tab)">@cookiescuddlefarm</a>
-            </li>
-            <li>
-              <strong>Website</strong>
-              <a href="https://www.cookiescuddlefarm.com">cookiescuddlefarm.com</a>
-            </li>
           </ul>
-
-          <div style="margin-top:2rem;">
-            <p style="font-weight:700; color:var(--text-dark); margin-bottom:.5rem;">Response Time</p>
-            <p style="color:var(--text-mid); font-size:.95rem;">We do our best to respond to all messages within 48 hours. Thank you for your patience!</p>
-          </div>
         </div>
 
         <div class="contact-form-wrap">

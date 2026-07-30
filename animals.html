@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="X-Frame-Options" content="DENY" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; form-action 'self'; base-uri 'self';" />
   <meta name="description" content="Meet the rescued farm animals at Cookie's Cuddle Farm — goats, pigs, chickens, rabbits, and more, each with their own story." />
   <meta name="robots" content="index, follow" />
   <title>Our Animals | Cookie's Cuddle Farm</title>
@@ -46,8 +46,7 @@
 
     <section class="page-hero" aria-label="Our Animals">
       <div class="container">
-        <span class="section-label">Meet the Residents</span>
-        <h1>Our Animals</h1>
+        <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);">Meet the Residents</h1>
         <p>Every animal at Cookie's Cuddle Farm has a unique story. Through rehabilitation, compassionate care, and plenty of love, each one has found a safe, forever home. Meet the incredible personalities who make our farm so special.</p>
       </div>
     </section>
@@ -56,9 +55,7 @@
     <section class="section" aria-labelledby="animals-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Animal Highlights</span>
-          <h2 id="animals-heading">Meet the Residents</h2>
-          <p class="section-intro"></p>
+          <h2 id="animals-heading" style="font-size:clamp(2rem,4vw,3rem);">Animal Highlights</h2>
         </div>
 
         <div class="animal-grid" role="list">
