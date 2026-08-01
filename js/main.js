@@ -103,10 +103,10 @@ if (form) {
         form.reset();
         alert('Your message has been sent! We will get back to you within 48 hours.\n\nThank you for reaching out to Cookie\'s Cuddle Farm.');
       } else {
-        alert('There was a problem sending your message. Please email us directly at Info@cookiescuddlefarm.com');
+        alert('There was a problem sending your message. Please email us directly at info@cookiescuddlefarm.org');
       }
     }).catch(() => {
-      alert('There was a problem sending your message. Please email us directly at Info@cookiescuddlefarm.com');
+      alert('There was a problem sending your message. Please email us directly at info@cookiescuddlefarm.org');
     });
   });
 
