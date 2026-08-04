@@ -390,7 +390,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(243,239,253,.96), rgba(243,239,253,.96)),
+    linear-gradient(rgba(180,160,220,.92), rgba(180,160,220,.92)),
     url('../images/hero.jpg') center/cover no-repeat;
   color: #ffffff;
   text-align: center;
