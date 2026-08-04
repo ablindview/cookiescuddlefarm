@@ -38,9 +38,9 @@
   --btn-primary-text: #ffffff;
   --btn-primary-hover:#4a5bbf;
 
-  --btn-secondary-bg:   #7b4fb5;
+  --btn-secondary-bg:   #14194a;
   --btn-secondary-text: #ffffff;
-  --btn-secondary-hover:#5c3494;
+  --btn-secondary-hover:#1e2560;
 
   --shadow-sm:  0 2px 8px rgba(30,30,80,.10);
   --shadow-md:  0 4px 20px rgba(30,30,80,.15);
@@ -390,7 +390,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(20,25,70,.45), rgba(40,15,70,.50)),
+    linear-gradient(rgba(123,79,181,.75), rgba(123,79,181,.80)),
     url('../images/hero.jpg') center/cover no-repeat;
   color: var(--white);
   text-align: center;
