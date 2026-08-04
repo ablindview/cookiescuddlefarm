@@ -29,7 +29,7 @@
   --text-muted:   #6b6d85;
   --border:       #e2e4f0;
 
-  --header-bg:    #ffffff;
+  --header-bg:    #ddd5f5;
   --footer-bg:    #1a1c35;
   --footer-text:  #d0d4f0;
   --footer-link:  #a594e8;
@@ -287,8 +287,8 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 }
 
 .logo img {
-  width: 58px;
-  height: 56px;
+  width: 116px;
+  height: 112px;
   border-radius: 0;
   object-fit: contain;
 }
