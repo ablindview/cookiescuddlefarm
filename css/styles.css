@@ -390,7 +390,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(180,160,220,.92), rgba(180,160,220,.92)),
+    linear-gradient(rgba(80,50,140,.88), rgba(80,50,140,.88)),
     url('../images/hero.jpg') center/cover no-repeat;
   color: #ffffff;
   text-align: center;
@@ -419,7 +419,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 
 .hero h1 {
   color: #ffffff;
-  text-shadow: 0 2px 12px rgba(0,0,0,.7), 0 1px 3px rgba(0,0,0,.9);
+  text-shadow: 0 2px 16px rgba(0,0,0,.95), 0 1px 4px rgba(0,0,0,1), 0 4px 24px rgba(0,0,0,.8);
   margin-bottom: 1rem;
 }
 
