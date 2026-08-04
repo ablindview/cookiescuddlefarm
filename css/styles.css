@@ -390,7 +390,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   display: flex;
   align-items: center;
   background:
-    linear-gradient(rgba(123,79,181,.75), rgba(123,79,181,.80)),
+    linear-gradient(rgba(45,58,124,.92), rgba(45,58,124,.92)),
     url('../images/hero.jpg') center/cover no-repeat;
   color: var(--white);
   text-align: center;
@@ -419,7 +419,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 
 .hero h1 {
   color: var(--white);
-  text-shadow: 0 2px 8px rgba(0,0,0,.4);
+  text-shadow: 0 2px 12px rgba(0,0,0,.7), 0 1px 3px rgba(0,0,0,.9);
   margin-bottom: 1rem;
 }
 
@@ -444,6 +444,7 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   background: var(--blue-dark);
   color: #ffffff;
   padding: 2rem 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,.7), 0 1px 3px rgba(0,0,0,.9);
 }
 
 .mission-grid {
