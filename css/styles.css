@@ -468,7 +468,10 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
   font-size: .95rem;
 }
 
-.mission-icon { font-size: 1.8rem; }
+.mission-icon {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,.9)) drop-shadow(0 0 3px rgba(255,255,255,.7));
+}
 
 /* =============================================
    ABOUT
