@@ -12,25 +12,45 @@ if (navToggle && primaryNav) {
   navToggle.addEventListener('click', () => {
     const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', String(!isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
     primaryNav.classList.toggle('is-open', !isOpen);
     document.body.style.overflow = isOpen ? '' : 'hidden';
+    const mainEl = document.getElementById('main-content');
+    const footerEl = document.querySelector('footer');
+    const logoLink = document.querySelector('.logo');
+    if (!isOpen) {
+      if (mainEl) mainEl.inert = true;
+      if (footerEl) footerEl.inert = true;
+      if (logoLink) logoLink.inert = true;
+    } else {
+      if (mainEl) mainEl.inert = false;
+      if (footerEl) footerEl.inert = false;
+      if (logoLink) logoLink.inert = false;
+    }
   });
+
+  function closeNav() {
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open navigation menu');
+    primaryNav.classList.remove('is-open');
+    document.body.style.overflow = '';
+    const mainEl = document.getElementById('main-content');
+    const footerEl = document.querySelector('footer');
+    const logoLink = document.querySelector('.logo');
+    if (mainEl) mainEl.inert = false;
+    if (footerEl) footerEl.inert = false;
+    if (logoLink) logoLink.inert = false;
+  }
 
   // Close nav when a link is clicked
   primaryNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navToggle.setAttribute('aria-expanded', 'false');
-      primaryNav.classList.remove('is-open');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeNav);
   });
 
   // Close nav on Escape key
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && primaryNav.classList.contains('is-open')) {
-      navToggle.setAttribute('aria-expanded', 'false');
-      primaryNav.classList.remove('is-open');
-      document.body.style.overflow = '';
+      closeNav();
       navToggle.focus();
     }
   });
@@ -42,9 +62,7 @@ if (navToggle && primaryNav) {
       !primaryNav.contains(e.target) &&
       !navToggle.contains(e.target)
     ) {
-      navToggle.setAttribute('aria-expanded', 'false');
-      primaryNav.classList.remove('is-open');
-      document.body.style.overflow = '';
+      closeNav();
     }
   });
 }
@@ -101,12 +119,24 @@ if (form) {
     }).then(res => {
       if (res.ok) {
         form.reset();
-        alert('Your message has been sent! We will get back to you within 48 hours.\n\nThank you for reaching out to Cookie\'s Cuddle Farm.');
+        if (successMsg) {
+          successMsg.textContent = 'Your message has been sent! We will get back to you within 48 hours. Thank you for reaching out to Cookie\'s Cuddle Farm.';
+          successMsg.removeAttribute('hidden');
+          successMsg.focus();
+        }
       } else {
-        alert('There was a problem sending your message. Please email us directly at info@cookiescuddlefarm.org');
+        if (successMsg) {
+          successMsg.textContent = 'There was a problem sending your message. Please email us directly at info@cookiescuddlefarm.org';
+          successMsg.removeAttribute('hidden');
+          successMsg.focus();
+        }
       }
     }).catch(() => {
-      alert('There was a problem sending your message. Please email us directly at info@cookiescuddlefarm.org');
+      if (successMsg) {
+        successMsg.textContent = 'There was a problem sending your message. Please email us directly at info@cookiescuddlefarm.org';
+        successMsg.removeAttribute('hidden');
+        successMsg.focus();
+      }
     });
   });
 
