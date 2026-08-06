@@ -898,6 +898,12 @@ h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 }
 
 @media (prefers-color-scheme: dark) {
+  .logo img {
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+  }
+
   .page-hero {
     background: #1a1f4a;
   }
