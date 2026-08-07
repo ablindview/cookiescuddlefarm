@@ -22,6 +22,8 @@ if (navToggle && primaryNav) {
       if (mainEl) mainEl.inert = true;
       if (footerEl) footerEl.inert = true;
       if (logoLink) logoLink.inert = true;
+      const firstLink = primaryNav.querySelector('a');
+      if (firstLink) firstLink.focus();
     } else {
       if (mainEl) mainEl.inert = false;
       if (footerEl) footerEl.inert = false;
@@ -150,21 +152,3 @@ if (form) {
   });
 }
 
-// ── Active nav link on scroll ──
-const sections = document.querySelectorAll('section[id], div[id="home"]');
-const navLinks  = document.querySelectorAll('.primary-nav a[href^="#"]');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.removeAttribute('aria-current');
-        if (link.getAttribute('href') === '#' + entry.target.id) {
-          link.setAttribute('aria-current', 'page');
-        }
-      });
-    }
-  });
-}, { rootMargin: '-40% 0px -55% 0px' });
-
-sections.forEach(s => observer.observe(s));
